@@ -1,14 +1,41 @@
-/* line 1, ../compass/sass/style.scss */
-body {
-  color: black;
-}
+/*
+Error: Invalid CSS after "@include header": expected selector or at-rule, was "body {"
+        on line 9 of /Users/OliverLai/Desktop/DigitalCrafts/sass-2.0/assets/compass/sass/style.scss
 
-/* line 7, ../compass/sass/style.scss */
-body {
-  color: #cf400a;
-}
+4: }
+5: 
+6: $primaryDivTextColor: #cf400a;
+7: @include header
+8: 
+9: body {
+10: 	color: $primaryDivTextColor;
+11: }
+12: 
+13: //scoped variables
+14: #test-div{
 
-/* line 12, ../compass/sass/style.scss */
-#test-div {
-  color: #00ff00;
-}
+Backtrace:
+/Users/OliverLai/Desktop/DigitalCrafts/sass-2.0/assets/compass/sass/style.scss:9
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@include header\": expected selector or at-rule, was \"body {\"\A         on line 9 of /Users/OliverLai/Desktop/DigitalCrafts/sass-2.0/assets/compass/sass/style.scss\A \A 4: }\A 5: \A 6: $primaryDivTextColor: #cf400a;\A 7: @include header\A 8: \A 9: body {\A 10: 	color: $primaryDivTextColor;\A 11: }\A 12: \A 13: //scoped variables\A 14: #test-div{"; }
