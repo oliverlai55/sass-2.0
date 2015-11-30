@@ -92,4 +92,12 @@ Extend directive
 	@include circle(50px, #0000ff, #cacaca)
 }
 
+@function getColumnWidth($width, $columns, $margin){
+	@return ($width / $numColumns) - ($margin * 2);
+}
 
+$numColumns:4;
+.column-test{
+	background: black;
+	width: getColumnWidth(300px, $numColumns, 1%);
+}
