@@ -7,3 +7,8 @@ body {
 body {
   color: #cf400a;
 }
+
+/* line 12, ../compass/sass/style.scss */
+#test-div {
+  color: #00ff00;
+}

@@ -7,3 +7,21 @@ $primaryDivTextColor: #cf400a;
 body {
 	color: $primaryDivTextColor;
 }
+
+//scoped variables
+#test-div{
+	$primaryDivTextColor: #00ff00;
+	color: $primaryDivTextColor;
+}
+
+//sass math - you cannot mix unit types, such as % and px, in math.
+// + -- addition
+// - -- subtraction
+// / -- division (sometimes, / is shorthand... ie font; in these case, the / must be inside () )
+
+// font: (16px/14px)
+// * -- multiplication
+// % -- modulus
+// == -- conditional equal
+// != -- conditional non-equal
+
